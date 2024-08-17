@@ -1,0 +1,16 @@
+/* src/components/NotFound.css */
+.not-found-container {
+    text-align: center;
+    padding: 50px;
+    background-color:white;
+    gap: 1rem;
+    height: 35rem;
+  }
+  
+  .home-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  

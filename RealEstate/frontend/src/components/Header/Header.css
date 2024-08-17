@@ -1,0 +1,66 @@
+/* src/components/Header/Header.css */
+
+.h-wrapper {
+    color: white;
+  }
+  
+  .h-container {
+    justify-content: space-between;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    color: var(--secondary);
+    position: relative;
+  }
+  
+  .h-menu {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+  }
+  
+  .h-menu > *:hover {
+    cursor: pointer;
+  }
+  
+  /* Hide menu icon by default */
+  .menu-icon {
+    display: none;
+  }
+  
+  /* Media query for smaller screens */
+  @media (max-width: 768px) {
+    .menu-icon {
+      display: block;
+    }
+    
+    .h-menu {
+      z-index: 99;
+      color: var(--black);
+      position: fixed; /* Changed to fixed to overlay */
+      gap: 2rem;
+      font-weight: 500;
+      flex-direction: column;
+      right: 3rem; /* Start from right edge */
+      top: 3rem; /* Start from top edge */
+      background: white;
+      display: flex;
+      border-radius: 10px;
+      transition: transform 200ms ease, opacity 200ms ease; /* Smooth transitions */
+      align-items: flex-start;
+      padding: 3rem;
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.05);
+      transform: translateX(100%); /* Start off-screen */
+      opacity: 0; /* Start invisible */
+    }
+  
+    .h-menu.open {
+      transform: translateX(0); /* Slide in */
+      opacity: 1; /* Make visible */
+    }
+  
+    .h-menu.closed {
+      transform: translateX(100%); /* Slide out */
+      opacity: 0; /* Hide */
+    }
+  }
+  

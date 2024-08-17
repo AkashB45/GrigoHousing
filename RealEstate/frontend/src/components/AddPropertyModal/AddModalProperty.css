@@ -1,0 +1,25 @@
+.modal-container {
+    height: 100vh; /* Use full viewport height for the modal on mobile */
+    width: 100%;
+    padding: 1rem; /* Add padding for better spacing on mobile */
+  }
+  
+  @media (max-width: 768px) {
+    .modal-container {
+      padding: 0.5rem; /* Adjust padding on smaller screens */
+    }
+  
+    .mantine-Modal-modal {
+      width: 95%; /* Ensure the modal takes up most of the screen width on mobile */
+      height: 95%; /* Ensure the modal takes up most of the screen height on mobile */
+    }
+  
+    .mantine-Container-root {
+      height: auto;
+    }
+  
+    .mantine-Stepper-root {
+      flex-direction: column; /* Stack the steps vertically on mobile */
+    }
+  }
+  
