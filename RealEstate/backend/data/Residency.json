@@ -35,7 +35,7 @@
       "address": "Street 3",
       "city": "California",
       "country": "US",
-      "image": "https://images.pexels.com/photos/323780/pexels-photo-323780.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "image": "https://images.pexels.com/photos/d323780/pexels-photo-323780.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
       "userEmail": "mukhtarhamza294@gmail.com",
       "createdAt": { "$date": "2023-04-14T07:26:20.051Z" },
       "updatedAt": { "$date": "2023-04-14T07:26:20.051Z" },
