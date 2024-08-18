@@ -94,7 +94,7 @@ networkx==3.3
 notebook==7.2.1
 notebook_shim==0.2.4
 numpy>=1.22.0
-# pywin32>=306
+# pywin32>=306 (Removed)
 opt-einsum==3.3.0
 optree==0.12.1
 overrides==7.7.0
@@ -117,7 +117,7 @@ pyparsing==3.1.2
 python-dateutil==2.9.0.post0
 python-json-logger==2.0.7
 pytz==2024.1
-pywinpty==2.0.13
+pywinpty==2.0.13 (Optional, for Windows only)
 PyYAML==6.0.2
 pyzmq==26.1.0
 qtconsole==5.5.2
@@ -141,8 +141,8 @@ stack-data==0.6.3
 sympy==1.13.1
 tensorboard==2.17.0
 tensorboard-data-server==0.7.2
-tensorflow==2.17.0
-tensorflow-intel==2.17.0
+tensorflow==2.17.0 (Optional, or use PyTorch)
+tensorflow-intel==2.17.0 (Optional, or use PyTorch)
 termcolor==2.4.0
 terminado==0.18.1
 tf_keras==2.17.0
